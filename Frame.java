@@ -14,14 +14,6 @@ public class Frame {
 		if(frame ==null) {
 			frame = new JFrame("Draw a line");
 			frame.setSize(1200,800);
-//			JPanel enterT = new JPanel();
-//			JTextField tzag = new JTextField(10);
-//			JTextField tzag2 = new JTextField(10);
-//			enterT.setSize(3, 5);
-//			enterT.add(tzag);
-//			enterT.add(tzag2);
-//			enterT.setLayout(new GridLayout(1,1));
-//			frame.add(enterT);
 			frame.setVisible(true);
 		}
 
@@ -43,10 +35,14 @@ public class Frame {
 		board[1]=3;
 		board[2]=5;
 		board[3]=7;
+		title.setSize(300, 70);
+		enterT.setSize(300, 70);
 		Draw draw = new Draw(number,board);
-		frame.add(enterT);
-		frame.add(draw,BorderLayout.CENTER);
-		enterT.setBounds(860,200, 300, 100);
+//		frame.add(title);
+//		title.setLocation(120, 20);
+//		frame.add(enterT);
+//		enterT.setLocation(860,100);
+		frame.add(draw);
 		frame.setVisible(true);
 	}
 
